@@ -29,9 +29,10 @@ public class StaticClassExample {
             return StaticClassExample.this.toString();
         }
 
-        // you should also play with shading....
+        // you should also play with shadowing....
         private int globalX;
         void printValues() {
+            setGlobalX(1);
             // as was in example above you can access top level class via StaticClassExample.this.* mechanism.
             System.out.println(globalX +  ": " + StaticClassExample.this.globalX);
         }
@@ -55,6 +56,10 @@ public class StaticClassExample {
         this.classA = new NestedClassA();
         this.classB = new NestedClassB();
         this.classC = new NestedClassC();
+    }
+
+    public void setGlobalX(int i) {
+        this.globalX = i;
     }
 
     // to create non-static nested classes must have link to object to create. (looks strange right? :) )

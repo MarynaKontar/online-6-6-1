@@ -6,6 +6,7 @@ package ua.goit.online6.first_example;
 public class StaticVariableApp {
 
     public static void main(String[] args) {
+        StaticVariableExample.setValue(1);
         // As mentioned before we can assign static variables to class directly
         StaticVariableExample.intValue = 5;
         System.out.println(new StaticVariableExample());

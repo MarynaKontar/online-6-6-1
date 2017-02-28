@@ -27,11 +27,7 @@ public class StaticVariableExample {
     // 2. Implement toString method to describe object text value.
 
     public StaticVariableExample() {
-        this(intValue);
-    }
-
-    public StaticVariableExample(int notStaticValue) {
-        this.notStaticValue = notStaticValue;
+        this.notStaticValue = intValue;
     }
 
     @Override

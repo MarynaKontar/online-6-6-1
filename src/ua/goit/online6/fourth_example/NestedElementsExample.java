@@ -17,6 +17,7 @@ public class NestedElementsExample {
         interface NestedNestedInterfaceB {
             interface NestedNestedInterfaceC {
                  // TODO.....
+                // int ~ 2 ^ 31 - 1
             }
         }
         int getVariable();

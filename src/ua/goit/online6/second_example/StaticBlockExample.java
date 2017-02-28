@@ -23,6 +23,12 @@ public class StaticBlockExample {
         }
         // (ADV) when exception occurred in static block then NoClassDefFoundError raised as class cannot be loaded.
     }
+    static {
+        aInt /= 2;
+    }
+    static {
+        aInt += 10;
+    }
 
     // static variables can be assigned in static methods or ordinal method.
     public static int getaInt() {

@@ -27,6 +27,11 @@ public class StaticClassExampleApp {
         A a = new A();
         System.out.println(a.getVariable());
 
+        //
+        //Calendar calendar = Calendar.getInstance();
+        //LocalDateTime time = LocalDateTime.now();
+        //Integer integer = Integer.valueOf(1);
+
         StaticClassExample example = StaticClassExample.createObject(10);
         example.printA();
         example.printB();
