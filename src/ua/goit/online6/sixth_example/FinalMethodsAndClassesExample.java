@@ -41,7 +41,7 @@ public class FinalMethodsAndClassesExample {
     // Next statement will give you an error.
     // static class E extends D {
     //
-    // }
+    //}
     //
     // Final class or method mostly means that this is final version and you can just accept it :)
 

@@ -25,16 +25,21 @@ public class FinalVariablesExample {
     private static final int CONST_2;
 
     static {
-        CONST_2 = 2;
+        int sum = 0;
+        for (int i = 0; i <= 10; i++) {
+            sum += i;
+        }
+        CONST_2 = sum;
+        //CONST_2 = 1;
     }
 
     // assume we have final variable date - with default constructor it will give us current date.
-    private final Date date = new Date();
+    private static final Date date = new Date();
 
     // create method that will update the date with one we need.
     public void setDate(Date date) {
         // line below wont give you much success.
-        // this.date = date;
+        //this.date = date;
         // but next one will...
         this.date.setTime(date.getTime());
         // so even in case variable is final - this only opplies to references, not to the data inside object.

@@ -30,4 +30,8 @@ public final class ExampleUtils {
         return max;
     }
 
+    private ExampleUtils() {
+
+    }
+
 }

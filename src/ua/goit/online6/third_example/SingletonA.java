@@ -5,7 +5,7 @@ package ua.goit.online6.third_example;
  *
  * @author andreymi.
  */
-public class SingletonA {
+public final class SingletonA {
     // We will create singleton pattern object. This means that it is only possible to hold
     // one instance of such class in application. (in java it is not correct as classes as loaded by classloader objects
     // and when in java app several classloaders loaded same class - there will be several singletons. So in java correct
@@ -20,7 +20,7 @@ public class SingletonA {
 
     private int value;
 
-    public SingletonA(int value) {
+    private SingletonA(int value) {
         this.value = value;
     }
 
